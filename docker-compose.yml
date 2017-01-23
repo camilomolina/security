@@ -1,0 +1,43 @@
+version: "2"
+
+services:
+  db:
+    image: mongo:2.6.12
+    ports:
+    - "27020:27017"
+    volumes:
+    - mongo-data:/data/db
+    - mongo-config:/data/configdb
+
+  auth:
+    build: auth/target/docker
+    ports:
+    - "8000:8080"
+    - "8700:8787"
+    depends_on:
+    - db
+
+  user:
+    build: user/target/docker
+    ports:
+    - "8001:8080"
+    - "8701:8787"
+    depends_on:
+    - db
+
+  rol:
+    build: user/target/docker
+    ports:
+    - "8002:8080"
+    - "8702:8787"
+    depends_on:
+    - db
+
+
+volumes:
+  mongo-data:
+    external: false
+
+  mongo-config:
+    external: false
+
