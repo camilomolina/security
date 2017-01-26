@@ -19,6 +19,7 @@ services:
     - "8700:8787"
     depends_on:
     - db
+    restart: always
 
   user:
     build: user/target/docker
