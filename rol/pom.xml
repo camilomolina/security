@@ -21,7 +21,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<docker.image.prefix>camilomolina</docker.image.prefix>
-		<docker.image.project>sport-result</docker.image.project>
+		<docker.image.project>security</docker.image.project>
 		<java.version>1.8</java.version>
 	</properties>
 

@@ -33,7 +33,7 @@ public class AuthApiController {
         jwtBuilder.claim("roles", "");
         jwtBuilder.setIssuedAt(new Date());
         jwtBuilder.setExpiration(new Date(new Date().getTime() * 30 * 60000));
-        jwtBuilder.signWith(SignatureAlgorithm.HS256, "sport-result");
+        jwtBuilder.signWith(SignatureAlgorithm.HS256, "security");
         String token = jwtBuilder.compact();
 
         LoginResponse loginResponse = new LoginResponse();
