@@ -1,0 +1,5 @@
+projectKey=my:security
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/my:security
+ceTaskId=AVoA2ht41JsGd2PdzAnV
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVoA2ht41JsGd2PdzAnV
